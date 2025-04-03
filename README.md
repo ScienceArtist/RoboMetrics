@@ -33,10 +33,8 @@ RoboMetrics is an intelligent analyzer for Robot Framework test suites that help
 ## 📦 Installation
 
 ```bash
-# Via pip
-pip install robometrics
 
-# Or from source
+# from source
 git clone https://github.com/ScienceArtist/robometrics.git
 cd robometrics
 pip install -e .
