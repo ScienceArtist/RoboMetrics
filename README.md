@@ -127,7 +127,6 @@ Add to your GitHub Actions workflow:
 ```yaml
 - name: Run RoboMetrics Analysis
   run: |
-    pip install robometrics
     robometrics analyze ./tests --fail-on-complexity 4.5
 ```
 
