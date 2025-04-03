@@ -1,20 +1,20 @@
-# TestScope
+# RoboMetrics
 
 <div align="center">
 
-![TestScope Logo](assets/testscope-logo.png)
+![RoboMetrics Logo](assets/robometrics-logo.png)
 
-Deep insights into your Robot Framework test suites
+Advanced analytics for Robot Framework test suites
 
-[![PyPI version](https://badge.fury.io/py/testscope.svg)](https://badge.fury.io/py/testscope)
+[![PyPI version](https://badge.fury.io/py/robometrics.svg)](https://badge.fury.io/py/robometrics)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
 
 </div>
 
-## 🔍 What is TestScope?
+## 🔍 What is RoboMetrics?
 
-TestScope is an intelligent analyzer for Robot Framework test suites that helps you understand and optimize your test architecture. Using advanced metrics like Shannon Entropy and Jaccard Similarity, it provides actionable insights about test complexity, redundancy, and usage patterns.
+RoboMetrics is an intelligent analyzer for Robot Framework test suites that helps you understand and optimize your test architecture. Using advanced metrics like Shannon Entropy and Jaccard Similarity, it provides actionable insights about test complexity, redundancy, and usage patterns.
 
 ### 🚀 Key Features
 
@@ -23,7 +23,7 @@ TestScope is an intelligent analyzer for Robot Framework test suites that helps 
 - **Pattern Recognition**: Track keyword usage patterns to optimize test design
 - **Suite Structure Analysis**: Get a clear overview of your test organization
 
-### 💡 Why TestScope?
+### 💡 Why RoboMetrics?
 
 - **Save Time**: Quickly identify problematic tests that need attention
 - **Improve Quality**: Ensure balanced test coverage and complexity
@@ -34,11 +34,11 @@ TestScope is an intelligent analyzer for Robot Framework test suites that helps 
 
 ```bash
 # Via pip
-pip install testscope
+pip install robometrics
 
 # Or from source
-git clone https://github.com/yourusername/testscope.git
-cd testscope
+git clone https://github.com/ScienceArtist/robometrics.git
+cd robometrics
 pip install -e .
 ```
 
@@ -49,16 +49,16 @@ pip install -e .
 cd path/to/your/robot/tests
 ```
 
-2. Run TestScope:
+2. Run RoboMetrics:
 ```bash
-testscope analyze ./
+robometrics analyze ./
 ```
 
 3. View the results in `test_analysis_output/analysis_report.json`
 
 ## 📊 Understanding the Output
 
-TestScope generates a comprehensive JSON report containing:
+RoboMetrics generates a comprehensive JSON report containing:
 
 ### 1. Test Suite Summary
 ```json
@@ -111,13 +111,13 @@ Identifies test pairs with similarity > 80%:
 
 ```bash
 # Analyze specific directory
-testscope analyze path/to/tests --output custom_output.json
+robometrics analyze path/to/tests --output custom_output.json
 
 # Set custom similarity threshold
-testscope analyze . --similarity-threshold 0.75
+robometrics analyze . --similarity-threshold 0.75
 
 # Generate detailed report
-testscope analyze . --verbose
+robometrics analyze . --verbose
 ```
 
 ### Integration with CI/CD
@@ -125,16 +125,16 @@ testscope analyze . --verbose
 Add to your GitHub Actions workflow:
 
 ```yaml
-- name: Run TestScope Analysis
+- name: Run RoboMetrics Analysis
   run: |
-    pip install testscope
-    testscope analyze ./tests --fail-on-complexity 4.5
+    pip install robometrics
+    robometrics analyze ./tests --fail-on-complexity 4.5
 ```
 
 ## 📈 Best Practices
 
 1. **Regular Analysis**
-   - Run TestScope as part of your CI/CD pipeline
+   - Run RoboMetrics as part of your CI/CD pipeline
    - Track complexity trends over time
 
 2. **Complexity Management**
@@ -161,15 +161,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Credits
 
-- Original implementation by @ScienceArtist
+- Created by [@ScienceArtist](https://github.com/ScienceArtist)
 - Shannon Entropy implementation inspired by [Information Theory](https://en.wikipedia.org/wiki/Shannon_entropy)
 - Robot Framework community for inspiration and support
 
 ## 📞 Support
 
-- 📫 [Report a bug](https://github.com/yourusername/testscope/issues)
-- 💡 [Request a feature](https://github.com/yourusername/testscope/issues)
-- 📖 [Wiki](https://github.com/yourusername/testscope/wiki)
+- 📫 [Report a bug](https://github.com/ScienceArtist/robometrics/issues)
+- 💡 [Request a feature](https://github.com/ScienceArtist/robometrics/issues)
+- 📖 [Wiki](https://github.com/ScienceArtist/robometrics/wiki)
 
 ---
 
